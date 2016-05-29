@@ -48,8 +48,6 @@ public class Calculation {
     }
 
 
-
-
     public double add(double number1, double number2) {
         return result = number1 + number2;
     }

@@ -21,7 +21,7 @@ public class CalcTest {
 
     @Test(description = "Check the Set - method", enabled = true)
 
-    public void checkSet() {
+    public void checkSetMethod() {
         System.out.println("Set method");
         Calculation calc1 = new Calculation();
         double check = 2.5;
@@ -38,7 +38,7 @@ public class CalcTest {
 
 
     @Test
-    public void checkAdd() {
+    public void checkAddMethod() {
         System.out.println("Add method");
         double check = calc2.add(2.0, 2.0);
 
@@ -46,7 +46,7 @@ public class CalcTest {
     }
 
     @Test
-    public void checkArAdd() {
+    public void arrCheckAddMethod() {
         System.out.println("check Add with Arrey ");
         double i;
         for (i = 0; i <= 50; i++) {
@@ -56,7 +56,7 @@ public class CalcTest {
         }
     }
     @Test(priority= 1)
-    public void doubleAr(){
+    public void dualArCheckAdd(){
         System.out.println("dobleAr method");
       double j;
         double g;

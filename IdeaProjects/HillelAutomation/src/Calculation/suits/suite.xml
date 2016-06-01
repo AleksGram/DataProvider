@@ -4,7 +4,7 @@
 <suite name="Smoke tests" parallel="methods" thread-count="2" >
     <test name="Test orders in TestNG" preserve-order="true"  thread-count="4">
       <classes>
-          <class name="lesson4.Suits.OrderTEst">
+          <class name="Calculation.OrderTEst">
                   <methods>
                   </methods>
           </class>
@@ -12,7 +12,7 @@
     </test>
     <test name="Test Data Provider">
         <classes>
-            <class name="lesson4.Suits.DataProviderTest">
+            <class name="Calculation.DataProviderTest">
                 <methods>
                     <include name="test4"/>
                     <include name="test1"/>

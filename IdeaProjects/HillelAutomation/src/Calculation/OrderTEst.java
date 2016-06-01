@@ -1,4 +1,4 @@
-package lesson4.Suits;
+package Calculation;
 
 import org.testng.annotations.Test;
 

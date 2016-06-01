@@ -1,4 +1,4 @@
-package lesson4.Suits;
+package Calculation;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -16,7 +16,7 @@ public class DataProviderTest {
 
     public static Object[][] credentials() {
 
-        return new Object[][] { {2, 2 ,6},{3, 2 ,5}, {2, 3 ,5}, {3, 3 ,6}, {3, 4 ,7}, {2, 2 ,4}, {2, 2 ,4}, {2, 2 ,4},
+        return new Object[][] { {2, 2 ,4},{3, 2 ,5}, {2, 3 ,5}, {3, 3 ,6}, {3, 4 ,7}, {2, 2 ,4}, {2, 2 ,4}, {2, 2 ,4},
                 {2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},
                 {2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},
                 {2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},
@@ -31,7 +31,7 @@ public class DataProviderTest {
         int actualResult = a + b;
         int expectedResult = c;
         Assert.assertEquals(actualResult, expectedResult, "Addition method failed");
-        Thread.sleep(1000);// waiting 1 s.
+        Thread.sleep(400);// waiting 1 s.
         }
 
 }

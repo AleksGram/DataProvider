@@ -19,10 +19,10 @@ public class CalcTest {
 
     }
 
-    @Test(description = "Check the Set - method", enabled = true)
+    @Test( groups = {"first"}, enabled = true)
 
     public void checkSetMethod() {
-        System.out.println("Set method");
+        System.out.println("Set method 1");
         Calculation calc1 = new Calculation();
         double check = 2.5;
         calc1.setNumber1(check);
@@ -37,9 +37,9 @@ public class CalcTest {
     }
 
 
-    @Test
+    @Test(groups = {"first"}, dependsOnMethods = {"checkSetMethod"})
     public void checkAddMethod() {
-        System.out.println("Add method");
+        System.out.println("Add method 2");
         double check = calc2.add(2.0, 2.0);
 
         Assert.assertTrue(check == 4, "Add does not work");
@@ -47,7 +47,7 @@ public class CalcTest {
 
     @Test
     public void arrCheckAddMethod() {
-        System.out.println("check Add with Arrey ");
+        System.out.println("check Add with Arrey 3 ");
         double i;
         for (i = 0; i <= 50; i++) {
             double checkAr = calc2.add(i, 0.0);
@@ -57,7 +57,7 @@ public class CalcTest {
     }
     @Test(priority= 1)
     public void dualArCheckAdd(){
-        System.out.println("dobleAr method");
+        System.out.println("dobleAr method 4");
       double j;
         double g;
         for(j=0,g=50; j<=50; j++,g--){
@@ -75,7 +75,7 @@ public class CalcTest {
     }
     @Test(dataProvider = "numDataProvider")
     public void checkParametrs(double firstNum, double secondNum, double expectedResult){
-        System.out.println("checkParametrs method");
+        System.out.println("checkParametrs method 5");
         double result=calc2.add(firstNum, secondNum);
         Assert.assertTrue(result==expectedResult, "Expected "+expectedResult);
     }

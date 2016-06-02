@@ -16,7 +16,7 @@ public class DataProviderTest {
 
     public  Object[][] credentials() throws Exception {
         Object[][] testObjArray = ExcelUtils.getTableArray("C:\\Users\\Грам\\IdeaProjects\\HillelAutomation\\src\\Calculation\\dataTest\\TestData.xlsx","Sheet1" );
-        return (testObjArray);
+        return new Object[][]{ testObjArray};
 
         /*return new Object[][] { {2, 2 ,4},{3, 2 ,5}, {2, 3 ,5}, {3, 3 ,6}, {3, 4 ,7}, {2, 2 ,4}, {2, 2 ,4}, {2, 2 ,4},
                 {2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},{2, 2 ,4},

@@ -1,6 +1,7 @@
 package Calculation;
 
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import Calculation.ExcelUtils;
 import org.testng.annotations.Test;
@@ -28,12 +29,12 @@ public class DataProviderTest {
 
     @Test(dataProvider = "Addition" )
 
-    public void test(double a, double b, double c) throws InterruptedException {
+    public void test(Double a, Double b, Double c) throws InterruptedException {
 
-        double actualResult = a + b;
-        double expectedResult = c;
+        Double actualResult = a + b;
+        Double expectedResult = c;
         Assert.assertEquals(actualResult, expectedResult, "Addition method failed");
         Thread.sleep(400);
-        }
+    }
 
 }

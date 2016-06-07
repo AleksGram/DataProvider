@@ -1,5 +1,6 @@
 package Calculation;
 import java.io.*;
+import java.util.Arrays;
 
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -57,7 +58,7 @@ public class ExcelUtils {
 
                     tabArray[ci][cj] = getCellData(i, j);
 
-                    System.out.println(tabArray[ci][cj]);
+                   System.out.print(tabArray[ci][cj]);
 
                 }
 

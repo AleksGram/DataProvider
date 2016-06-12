@@ -1,0 +1,12 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+        <suite name="Quick test">
+    <test name="Own tests">
+        <classes>
+            <class name="Calculation.CalcTest">
+                <methods>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -38,7 +38,7 @@ public class Calculation {
 
 
     public double givNum1() {
-        System.out.println("Give the first number: ");
+        System.out.println("Give the first number please: ");
         double n1 = sc.nextDouble();
         return n1;
     }
@@ -51,7 +51,7 @@ public class Calculation {
 
 
     public double givNum2() {
-        System.out.println("Give the second number: ");
+        System.out.println("Give the second number please: ");
         double n2 = sc.nextDouble();
         return n2;
 
